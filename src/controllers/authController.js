@@ -49,6 +49,7 @@ export const registerUser = async (req, res) => {
     }
 };
 
+
 export const verifyEmail = async (req, res) => {
     try {
         const { token } = req.query; // Get token from URL

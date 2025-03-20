@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use(express.json());
 
-app.use('/auth', authRoutes);
+app.use('/', authRoutes);
 
 app.use((err, req, res, next) => {
     console.error(err.stack);
